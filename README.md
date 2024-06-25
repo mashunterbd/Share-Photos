@@ -26,115 +26,114 @@ This tool allows you to share photos taken on specific dates via a local web ser
 - [Troubleshooting](#troubleshooting)
 - [Example](#example)
 
-
-### Features
+## Features
 
 - Filter and share photos by specific dates.
 - Provide options to share photos taken today, yesterday, or on a custom date.
 - Generate a QR code for easy access to the local web server.
 - Allow friends to connect via a hotspot and download the photos.
 
-### Installation
+## Installation
 
 To use this tool, follow the steps below:
 
-1. **Clone the Repository**
+### Clone the Repository
 
-   Clone the repository to your local machine:
+Clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/mashunterbd/Share-Photos.git
-   ```
+```bash
+git clone https://github.com/mashunterbd/Share-Photos.git
+````
 
-2. **Navigate to the Directory**
+### Navigate to the Directory
 
-   Change to the directory where the script is located:
+Change to the directory where the script is located:
 
-   ```bash
-   cd Share-Photos
-   ```
+```bash
+cd Share-Photos
+```
 
-3. **Make the Script Executable**
+### Make the Script Executable
 
-   Ensure the script has executable permissions:
+Ensure the script has executable permissions:
 
-   ```bash
-   chmod +x share-photos.sh
-   ```
+```bash
+chmod +x share-photos.sh
+```
 
-4. **Install Dependencies**
+### Install Dependencies
 
-   Install the required dependencies:
+Install the required dependencies:
 
-   - **ExifTool**: Used to filter photos by their creation date.
-   - **Python3**: Used to run a simple HTTP server.
-   - **qrcode-terminal**: Used to generate QR codes in the terminal.
+- **ExifTool**: Used to filter photos by their creation date.
+- **Python3**: Used to run a simple HTTP server.
+- **qrcode-terminal**: Used to generate QR codes in the terminal.
 
-   On Debian-based systems (like Ubuntu), you can install these dependencies using:
+On Debian-based systems (like Ubuntu), you can install these dependencies using:
 
-   ```bash
-   sudo apt update
-   sudo apt install exiftool python3 qrcode-terminal
-   ```
+```bash
+sudo apt update
+sudo apt install exiftool python3 qrcode-terminal
+```
 
-### Usage
+## Usage
 
-1. **Run the Script**
+### Run the Script
 
-   Execute the script from the terminal:
+Execute the script from the terminal:
 
-   ```bash
-   ./share-photos.sh
-   ```
+```bash
+./share-photos.sh
+```
 
-2. **Select Date Option**
+### Select Date Option
 
-   You will be prompted to choose an option to filter photos by date:
+You will be prompted to choose an option to filter photos by date:
 
-   ```
-   Choose an option to filter photos by date:
-   1) Custom Date (YYYY/MM/DD)
-   2) Yesterday
-   3) Today
-   Enter your choice: 
-   ```
+```
+Choose an option to filter photos by date:
+1) Custom Date (YYYY/MM/DD)
+2) Yesterday
+3) Today
+Enter your choice: 
+```
 
-   - Choose `1` to enter a custom date.
-   - Choose `2` to filter photos taken yesterday.
-   - Choose `3` to filter photos taken today.
+- Choose `1` to enter a custom date.
+- Choose `2` to filter photos taken yesterday.
+- Choose `3` to filter photos taken today.
 
-3. **Enter Custom Date**
+### Enter Custom Date
 
-   If you choose the custom date option, enter the date in the format `YYYY/MM/DD`:
+If you choose the custom date option, enter the date in the format `YYYY/MM/DD`:
 
-   ```
-   Enter the date (YYYY/MM/DD): 2024:06:24
-   ```
+```
+Enter the date (YYYY/MM/DD): 2024/06/24
+```
 
-4. **Access Photos**
+### Access Photos
 
-   - If there are photos available for the selected date, the script will start a local HTTP server on port 8000.
-   - A QR code will be generated for easy access.
-   - Use a QR code scanner on your mobile device to scan the code and open the browser to view and download photos.
+- If there are photos available for the selected date, the script will start a local HTTP server on port 8000.
+- A QR code will be generated for easy access.
+- Use a QR code scanner on your mobile device to scan the code and open the browser to view and download photos.
 
-5. **Stop the Server**
+### Stop the Server
 
-   - Press Enter in the terminal to stop the server and clean up temporary files.
-   - The server will stop and all temporary files will be removed.
+- Press Enter in the terminal to stop the server and clean up temporary files.
+- The server will stop and all temporary files will be removed.
 
-### Benefits
+## Benefits
 
 - **Easy Sharing**: Quickly share photos taken on specific dates with friends.
 - **Local Hosting**: Host the photos locally on your machine without the need for an internet connection.
 - **Secure Access**: Use QR codes to securely and conveniently share access to your local server.
 - **Selective Download**: Allow friends to select and download only the photos they want.
 
-### Troubleshooting
+## Troubleshooting
 
 - **No Photos Found**: If no photos are available for the selected date, the script will notify you and not start the server.
 - **Dependencies**: Ensure all required dependencies are installed and properly configured.
 
-### Example
+## Example
 
 Here’s a step-by-step example of running the script and sharing photos taken on a custom date:
 
@@ -169,3 +168,5 @@ Here’s a step-by-step example of running the script and sharing photos taken o
 5. Scan the QR code generated in the terminal with your mobile device to view and download photos.
 
 By following this guide, you can effectively use the `share-photos.sh` script to share your photos easily and securely.
+
+```
