@@ -108,7 +108,7 @@ To use this tool, follow the steps below:
    If you choose the custom date option, enter the date in the format `YYYY/MM/DD`:
 
    ```
-   Enter the date (YYYY/MM/DD): 2024/06/24
+   Enter the date (YYYY/MM/DD): 2024:06:24
    ```
 
 4. **Access Photos**
